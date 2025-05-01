@@ -1,0 +1,57 @@
+.watch{
+    padding: 20px;background-color: rgba(25,25,25,0.25);
+
+    .text_overflow_box{display: -webkit-box;-webkit-box-orient: vertical;word-wrap: break-word;-webkit-line-clamp: 1;overflow: hidden;}
+    .center_box{display: flex;justify-content: center;align-items: center;}
+    .reverse_column_box{display: flex;flex-direction: column-reverse;}
+    .reverse_row_box{display: flex;flex-direction: row-reverse;}
+    .column_box{display: flex;flex-direction: column;}
+    .row_box{display: flex;flex-direction: row;}
+    .wrap_box{display: flex;flex-wrap: wrap;}
+    .grid_box{display: grid;}
+    .flex_1_box{flex: 1;}
+
+    .left{width: 1366px;padding: 20px;}
+    .right{flex:1;padding: 20px;}
+
+    video{width: 100%;height: 768px;}
+    .empty{
+        color:white;font-size: 24px;
+        width: 100%;height: 720px;
+        img{width: 100px;height:100px;margin-right: 10px;filter:invert(1);}
+    }
+    .options{
+        padding: 5px;margin:5px 0px;background-color: rgba(50,50,50,0.5);
+        button{margin: 5px;padding:10px;background-color: transparent;color:white;border:1px solid white;cursor: pointer;}
+        .enable{background-color: rgba(50,100,200,1);border:1px solid rgba(50,100,200,1);}
+        button:hover{background-color: rgba(50,100,200,1);border:1px solid rgba(50,100,200,1);}
+    }
+
+    .episodes{
+        padding: 10px;margin:5px 0px;background-color: rgba(50,50,50,0.5);
+        grid-template-columns: repeat(auto-fill,minmax(40px , 1fr));gap:10px;
+
+        button{padding:5px;border:1px solid gray;color:gray;background-color: transparent;}
+        .watching{border:1px solid rgba(50,100,200,1);background-color: rgba(50,100,200,1);color:white;}
+    }
+
+    .current{
+        color:white;background-color: rgba(50,50,100,0.5);padding: 10px;margin:0px 20px;
+
+        .thumbnail{
+            .spinner{width:200px;height:300px;}
+            .missing{width:200px;height:300px;color:white;border:1px solid white;}
+            img{width:200px;height:300px;object-fit:cover;}
+        }
+
+        label{color:white;}
+        .title{font-size: 28px;}
+        .partition{border-bottom: 2px solid white;margin:5px 0px;}
+        .pair{
+            margin-top: 5px;
+            label{width: 70px;color: gray;}
+            div{ color:white;}
+            .genre{margin-right: 5px;}
+        }
+    }
+}

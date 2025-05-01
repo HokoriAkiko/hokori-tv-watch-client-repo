@@ -1,0 +1,53 @@
+.footer{
+    padding: 50px 0px 5px 0px;background-color: rgba(25,25,25,0.25);
+    
+    .row_box{display: flex; flex-direction: row;}
+    .center_box{display: flex;justify-content: center;align-items: center;}
+    .column_box{display: flex;flex-direction: column;}
+    .abs_box{position: absolute; width: 100%; height: 100%;}
+
+    .content{
+        box-sizing: border-box;
+        width: 95vw; 
+        height: 200px;
+        /* height : 500px; */
+        position: relative;
+    }
+
+    .img_container{
+        z-index: 1;
+        background-image: url("../../public/Nilou_Card.png"); background-size: cover; background-position: 0px -900px;
+    }
+
+    .tint{
+        z-index: 2;
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    .info_container{
+        z-index: 3;
+
+        .brand{
+            transform: scale(0.8);
+        }
+
+        .message{
+            color: lightblue;
+            padding-left: 50px;
+            margin: 5px 0px;
+        }
+
+        .help{
+            color: gray;
+            margin: 20px 0px 10px 50px;
+            button{
+                margin: 0px 10px;
+                background-color: transparent;
+                border: transparent;
+                color: white;
+                cursor: pointer;
+            }
+            button:hover{color: lightblue;}
+        }
+    }
+}
